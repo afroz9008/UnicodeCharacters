@@ -1,0 +1,140 @@
+*::selection{
+    color:blue;
+    background: yellowgreen;
+
+}
+.tab{
+    border-style: none double;
+    border-color: blue;
+    width: 100%;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+.table-container{
+   width:100%;  
+    border-style: double;
+    border-color: blue;
+    height: 500px;
+    overflow-y: scroll;
+}
+.search-container{
+    width:100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+     border-style: double;
+     border-color: blue;
+ }
+ .starting-ending{
+     background: yellowgreen;
+    width:100%;  
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+     border-style: double;
+     border-color: blue;
+ }
+ label{
+    display: block;
+    width:100%;
+    margin: 5px;
+}
+/* #findBtn{
+    outline: none;
+    background: greenyellow;
+    cursor: pointer;
+    border: 1px solid black;
+    width:100%;
+    font-size: 70%;
+}
+#findBtn:hover{
+    background: honeydew;
+} */
+ #start,#end{
+    /* display: block; */
+    border: 1px solid black;
+    font-family: arial;
+    font-stretch: condensed;
+    font-weight: 900;
+    background: rgb(135, 248, 154);
+    width:70%;
+    outline:none;
+ }
+ #end{
+    margin-left: 5px;
+}
+
+#start:invalid,#end:invalid{
+    background: red;
+}
+ #srchText{
+    width:100%;
+    border: 0;
+     color:black;
+     font-family: arial;
+     font-stretch: condensed;
+     font-weight: 900;
+     background: rgb(135, 248, 154);
+     outline: none;
+ }
+ 
+td{
+    color:white;
+    text-align: center;
+    border: 3px solid white;
+    background: gray;
+    font-weight: 900;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px blue,2px 4px 4px red;
+}
+th{
+    height: 50px;
+    background: greenyellow;
+    position: sticky;
+    top:-5px;
+    left:0;    
+    border: 3px groove white;
+    font-family:verdana;
+    font-stretch: condensed;
+    font-variant: small-caps;
+    text-shadow: -1px 1px 1px red;
+}
+.info{
+    background:yellowgreen;
+    width:100%;  
+    border-style: double;
+    border-color: blue;
+    font-size: 20px;
+    font-family:"lucida sans";
+    font-stretch: condensed;
+    font-variant: small-caps;
+}
+strong{
+    text-decoration: underline;
+    color:rgb(29, 83, 247);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@media screen and (max-width:456px){
+    #findBtn{
+        display: block;
+        width:100%;
+        font-size: 80%;
+    }
+    label{
+        display: block;
+        width:100%;
+        margin: 5px;
+    }
+    #start,#end{
+        width:70%;
+    }
+    #end{
+        margin-left: 5px;
+    }
+}
